@@ -1,0 +1,19 @@
+
+@media screen and (max-width:650px) {
+    .container-link{
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+    }
+    .botao{
+        margin-top: 10px;
+    }
+    .titulo-poster{
+        margin-top: 50px;
+    }
+    .poster-principal{
+        background-position: center;
+        background-size: cover;
+        
+    }
+}

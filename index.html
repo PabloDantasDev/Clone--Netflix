@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+
+        <!--RESPONSIVIDADE-->
+    <link rel="stylesheet" href="./style/responsive.css">    
+
+
+    <!--START-OWL-CSS-JQUERY-->
+    <link rel="stylesheet" href="./style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/Owl/owl.theme.default.min.css">
+    <!--END-OWL-CSS-JQUERY-->
+
+    <title>Clone Netflix</title>
+</head>
+
+<body>
+    <!--START-HEADER-->
+    <header>
+        <div class="container-link">
+            <h2 class="logo">NETFLIX CLONE</h2>
+            <nav class="links-nav">
+                <a href="#">Inicio</a>
+                <a href="#serieLink">Series</a>
+                <a href="#filmesLink">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <!--END-HEADER-->
+    <!--START-CONTEUDO-POST-PRINCIPAL-->
+    <main>
+        <div class="poster-principal">
+            <div class="container-post">
+            <h3 class="titulo-poster" >Lucifer</h3>
+         <p class="sinopse">Entediado com a vida nas trevas, o diabo se muda para Los Angeles,<br> abre um piano-bar e empresta sua sabedoria a uma<br> investigadora de assassinatos.</p>
+         <div class="botoes">
+            <a href="#" onclick="return abrirPopup('https://www.youtube.com/watch?v=Nu5z3AT2jv8', 500, 400)">
+            <button class="botao"  type="button"> <i class="fas fa-play" ></i> ASSISTIR AGORA
+            </button>
+            </a>
+             <a href="#" onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">
+            <button class="botao"  type="button"> <i class="fas fa-info-circle"></i> MAIS INFORMAÇÕES 
+            </button>
+         </div>
+        </div>
+        
+        </div>
+    </main>
+    <!--END-CONTEUDO-POST-PRINCIPAL-->
+
+        <!--START-CONTEUDO-LISTAS CARROSEL-->
+        <div class="container-titulo-serie">
+            <a name="serieLink"></a>
+            <h3 class="titulo-filme">SERIES</h3>
+        </div>
+        <!--LISTA-SERIES-->
+        <div class="carrosel-box">
+        
+             <div class="owl-carousel owl-theme">
+                 <div class="item">
+                       <img class="box-filmes" src="imagens/series/GreysAnatomy.jpg" alt="">
+                   </div>
+   
+                   <div class="item">
+                    <img class="box-filmes" src="imagens/series/ilharecord.jpg" alt="">
+                   </div>
+   
+                       <div class="item">
+                        <a href="#" onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)"><img class="box-filmes" src="imagens/series/Loki.jpg" alt=""></a>
+                        </div>
+                       <div class="item">
+                        <a href="#" onclick="return abrirPopup('https://www.youtube.com/watch?v=Nu5z3AT2jv8', 500, 400)"><img class="box-filmes" id="lucifer" src="imagens/series/Lucifer.jpg" alt="">  </a>   
+                       </div>
+                        <div class="item">
+                           
+                       <img class="box-filmes" src="imagens/series/Riverdale.jpg" alt="">
+                   </div>
+                       <div class="item">
+                       <img class="box-filmes" src="imagens/series/Stargirl.jpg" alt="">
+                   </div>
+                       <div class="item">
+                       <img class="box-filmes" src="imagens/series/TheFlash.jpg" alt="">
+                   </div>
+                       <div class="item">
+                       <img class="box-filmes" src="imagens/series/TheIdealCity.jpg" alt="">
+                   </div>
+                       <div class="item">
+                       <img class="box-filmes" src="imagens/series/TheGoodDDoctor.jpg" alt="">
+                   </div>
+                       <div class="item">
+                       <img class="box-filmes" src="imagens/series/theWalkingDead.jpg" alt="">
+                   </div>
+                       <div class="item">
+                       <img class="box-filmes" src="imagens/series/whatif.jpg" alt="">
+                   </div>
+                </div>
+            </div>
+
+            <div class="container-titulo-filme">
+                <h3 class="titulo-filme">FILMES</h3>
+            </div>
+            <!--LISTA-FILMES-->
+            <div class="carrosel-filmes" >
+                <a name="filmesLink"></a>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/FreeGuy.jpg" alt="">
+                    </div>
+    
+                    <div class="item">
+                     <img class="box-filmes" src="imagens/filmes/Infinito.jpg" alt="">
+                    </div>
+    
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/JungleCruise.jpg" alt="">
+                    </div>
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/JusticaEmFamilia.jpg" alt="">
+                    </div>
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/OEsquadraoSuicida.jpg" alt="">
+                    </div>
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/OperaçãoNarco.jpg" alt="">
+                    </div>
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/PatrulhaCaninaOFilmer.jpg" alt="">
+                    </div>
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/SpaceJam.jpg" alt="">
+                    </div>
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/UnRescateDeHuevitos.jpg" alt="">
+                    </div>
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/filmes/ViuvaNegra.jpg" alt="">
+                    </div>
+                        <div class="item">
+                        <img class="box-filmes" src="imagens/series/whatif.jpg" alt="">
+                        </div>
+                   
+               </div>
+            </div>
+        <!--END-CONTEUDO-LISTAS-CARROSEL-->
+    
+
+
+
+    <!--START-Scripts JavaScrript-jquery-fontawesome-->
+    <script src="https://kit.fontawesome.com/3f5dcd43c8.js" crossorigin="anonymous"></script>
+    <script SRC="js/Owl/jquery.min.js"></script>
+    <script SRC="js/Owl/owl.carousel.min.js"></script>
+    <script SRC="js/Owl/main.js"></script>
+
+     <!--END-Scripts JavaScrript-jquery-fontawesome-->
+
+    </body>
+    
+<footer class="footer">
+    <div class="conteiner-footer">
+    <p>Todos os Direitos a Netflix - Todo Conteudo Retirado em TMDB.ORG</p>
+</div>
+</footer>
+</html>
