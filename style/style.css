@@ -58,7 +58,7 @@ color: aliceblue;
 
 padding: 5px;
 text-decoration: none;
-color: #AAA;
+color: rgb(255, 255, 255);
 font-weight: bold;
 padding-right: 20px;
 transition: 0.5s;
@@ -89,6 +89,17 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 min-width: 100%;
+animation: zoom 4s ;
+
+}
+@keyframes zoom{
+
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 
 }
 
@@ -96,12 +107,15 @@ min-width: 100%;
   font-size: 75px;
   margin-bottom: 5px;
   font-family:helvetica;
+  animation: animaTexto 3s ;
+  
 }
 
 .sinopse{
     margin-bottom: 75px ;
-   
-   font-family: 'Times New Roman', Times, serif;
+   font-family: sans-serif;
+   animation: animaTexto 4s ;
+   max-width: 75%;
 }
 .botao{
     height: 40px;
@@ -114,12 +128,40 @@ min-width: 100%;
     transition: 0.4s ease-in-out;
     border: none;
     cursor: pointer;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
+.textos{
+    animation: animaTexto 6s;
+}
+
 .botao:hover{
     background-color: rgb(253, 253, 253);
     color: #000000;
  }
+
+
+@keyframes animaTexto{
+
+    0%{
+        transform: translateY(50rem) 
+    }
+    100%{
+        transform: translateY(1);
+        opacity: 1;
+    }
+}
+@keyframes botao{
+    0%{
+        transform: translateY(50rem)
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
  /*-------------------------
 ------START BODY STYLE--MAIN---
 --------------------------*/
@@ -145,11 +187,7 @@ min-width: 100%;
     font-size: 25px;
    
  }
- .item{
-     cursor: pointer;
-     background-color: grey;
-
- }
+ 
  
  
 /*-------------------------------------
@@ -166,4 +204,329 @@ min-width: 100%;
 .conteiner-footer{
     background-color: rgba(32, 29, 29, 0.808);
     padding: 50px;
+}
+
+.box-filmes img{
+    
+        padding: 50px;
+        transition: transform .3s; /* Animation */
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+      
+      
+
+      
+    }
+    .box-filmes:hover {
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    .option  {
+        display: flex;
+        background-color: #E50914;
+        margin-top: 5px;
+        z-index: 999;
+        text-decoration: none;
+        border: none;
+        flex-direction: row;
+        margin-left: 2px;
+        margin-top: 20px;
+        height: 35px;
+        width: 95px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .container-botao {
+        display: flex;
+        cursor: pointer;
+
+    }
+    .option:hover{
+        color:white;
+        background-color: rgb(31, 31, 31);
+    }
+
+
+
+
+
+    /*-----------------*/
+    .modal{
+        
+        position: fixed;
+        padding: 0;
+        left:0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.452);
+        transform: scale(1.1);
+        backdrop-filter: blur(1rem);
+        
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+       
+    }
+    .modal-content{
+        background-color: rgba(20, 20, 20, 0.774);
+        padding: 16px 25px;
+        width: 650px;
+        height: 75%;
+        color: rgb(247, 247, 247);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        
+
+    }
+    .modal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+        margin-bottom: 30px;
+  
+    }
+    .modal-botao{
+       margin-top: 300px;
+       width: 120px;
+       background-color: rgb(153, 51, 51);
+        border: none;
+        height: 50px;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    .modal-botao:hover{
+        background-color: black;
+        color: white;
+    }
+   
+   
+
+    .modal-content span{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 9999;
+     margin-bottom: 70%;
+     font-size: 24px;
+     cursor: pointer;
+     margin-right: -65px;
+  
+   
+    }
+    .modal-content img{
+        height: 450px;
+        width: 200px;
+        
+        
+    }
+
+    .show-modal{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+    }
+
+/*------------MODAL ILHA---------------------------*/
+.modalILHA{
+        
+    position: fixed;
+    padding: 0;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: scale(1.1);
+    backdrop-filter: blur(1rem);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+   
+}
+.modal-contentILHA{
+    background-color: rgba(20, 20, 20, 0.774);
+    padding: 16px 25px;
+    width: 650px;
+    height: 75%;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.modalILHA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalILHA h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+}
+.modal-botaoILHA{
+   margin-top: 300px;
+   width: 120px;
+   background-color: rgb(153, 51, 51);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.modal-botaoILHA:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.modal-contentILHA span{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+ margin-bottom: 70%;
+ font-size: 24px;
+ cursor: pointer;
+ margin-right: -65px;
+
+
+}
+.modal-contentILHA img{
+    height: 450px;
+    width: 200px;
+    
+    
+}
+
+.show-modalILHA{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/*---------------------MODAL LOKI-----------------------------------*/
+.modalLOKI{
+        
+    position: fixed;
+    padding: 0;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: scale(1.1);
+    backdrop-filter: blur(1rem);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+   
+}
+.modal-contentLOKI{
+    background-color: rgba(20, 20, 20, 0.774);
+    padding: 16px 25px;
+    width: 650px;
+    height: 75%;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.modalLOKI{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalLOKI h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+
+}
+.modal-botaoLOKI{
+   margin-top: 300px;
+   width: 120px;
+   background-color: rgb(153, 51, 51);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.modal-botaoLOKI:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.modal-contentLOKI span{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+ margin-bottom: 70%;
+ font-size: 24px;
+ cursor: pointer;
+ margin-right: -65px;
+
+
+}
+.modal-contentLOKI img{
+    height: 450px;
+    width: 200px;
+    
+    
+}
+
+.show-modalLOKI{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
 }

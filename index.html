@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
 
-        <!--RESPONSIVIDADE-->
-    <link rel="stylesheet" href="./style/responsive.css">    
+
+    <!--RESPONSIVIDADE-->
+    <link rel="stylesheet" href="./style/responsive.css">
 
 
     <!--START-OWL-CSS-JQUERY-->
@@ -28,7 +29,7 @@
                 <a href="#">Inicio</a>
                 <a href="#serieLink">Series</a>
                 <a href="#filmesLink">Filmes</a>
-                <a href="#">Documentários</a>
+
             </nav>
         </div>
     </header>
@@ -37,118 +38,387 @@
     <main>
         <div class="poster-principal">
             <div class="container-post">
-            <h3 class="titulo-poster" >Lucifer</h3>
-         <p class="sinopse">Entediado com a vida nas trevas, o diabo se muda para Los Angeles,<br> abre um piano-bar e empresta sua sabedoria a uma<br> investigadora de assassinatos.</p>
-         <div class="botoes">
-            <a href="#" onclick="return abrirPopup('https://www.youtube.com/watch?v=Nu5z3AT2jv8', 500, 400)">
-            <button class="botao"  type="button"> <i class="fas fa-play" ></i> ASSISTIR AGORA
-            </button>
-            </a>
-             <a href="#" onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">
-            <button class="botao"  type="button"> <i class="fas fa-info-circle"></i> MAIS INFORMAÇÕES 
-            </button>
-         </div>
-        </div>
-        
+                <div class="textos">
+                    <h3 class="titulo-poster">Lucifer</h3>
+                    <p class="sinopse">Entediado com a vida nas trevas, o diabo se muda para Los Angeles,<br> abre um
+                        piano-bar e empresta sua sabedoria a uma<br> investigadora de assassinatos.</p>
+                    <div class="botoes">
+                        <a href="#"
+                            onclick="return abrirPopup('https://www.youtube.com/watch?v=Nu5z3AT2jv8', 500, 400)">
+                            <button class="botao" type="button"> <i class="fas fa-play"></i> ASSISTIR AGORA
+                            </button>
+
+                            <a href="#"
+                                onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">
+                                <button class="botao" type="button"> <i class="fas fa-info-circle"></i> MAIS INFORMAÇÕES
+                                </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
     <!--END-CONTEUDO-POST-PRINCIPAL-->
 
-        <!--START-CONTEUDO-LISTAS CARROSEL-->
-        <div class="container-titulo-serie">
-            <a name="serieLink"></a>
-            <h3 class="titulo-filme">SERIES</h3>
-        </div>
-        <!--LISTA-SERIES-->
-        <div class="carrosel-box">
-        
-             <div class="owl-carousel owl-theme">
-                 <div class="item">
-                       <img class="box-filmes" src="imagens/series/GreysAnatomy.jpg" alt="">
-                   </div>
-   
-                   <div class="item">
-                    <img class="box-filmes" src="imagens/series/ilharecord.jpg" alt="">
-                   </div>
-   
-                       <div class="item">
-                        <a href="#" onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)"><img class="box-filmes" src="imagens/series/Loki.jpg" alt=""></a>
-                        </div>
-                       <div class="item">
-                        <a href="#" onclick="return abrirPopup('https://www.youtube.com/watch?v=Nu5z3AT2jv8', 500, 400)"><img class="box-filmes" id="lucifer" src="imagens/series/Lucifer.jpg" alt="">  </a>   
-                       </div>
-                        <div class="item">
-                           
-                       <img class="box-filmes" src="imagens/series/Riverdale.jpg" alt="">
-                   </div>
-                       <div class="item">
-                       <img class="box-filmes" src="imagens/series/Stargirl.jpg" alt="">
-                   </div>
-                       <div class="item">
-                       <img class="box-filmes" src="imagens/series/TheFlash.jpg" alt="">
-                   </div>
-                       <div class="item">
-                       <img class="box-filmes" src="imagens/series/TheIdealCity.jpg" alt="">
-                   </div>
-                       <div class="item">
-                       <img class="box-filmes" src="imagens/series/TheGoodDDoctor.jpg" alt="">
-                   </div>
-                       <div class="item">
-                       <img class="box-filmes" src="imagens/series/theWalkingDead.jpg" alt="">
-                   </div>
-                       <div class="item">
-                       <img class="box-filmes" src="imagens/series/whatif.jpg" alt="">
-                   </div>
+
+
+
+    <!--START-CONTEUDO-LISTAS CARROSEL-->
+    <div class="container-titulo-serie">
+        <a name="serieLink"></a>
+        <h3 class="titulo-filme">SERIES</h3>
+    </div>
+
+
+    <!---------------------------LISTA-SERIES--------------------------->
+
+    <div class="carrosel-box">
+
+        <div class="owl-carousel owl-theme">
+
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/Lucifer.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=Nu5z3AT2jv8&t=20s', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button onclick=" showModal()" class="option">Mais Informações</button>
+
                 </div>
             </div>
 
-            <div class="container-titulo-filme">
-                <h3 class="titulo-filme">FILMES</h3>
+            <!-------------------------END--LUCIFER-------------------------------->
+
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/ilharecord.jpg" alt="">
+
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=M2j_GYR-HmY', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#" onclick="showModalILHA()">Mais
+                        Informações </button>
+                </div>
+
             </div>
-            <!--LISTA-FILMES-->
-            <div class="carrosel-filmes" >
-                <a name="filmesLink"></a>
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/FreeGuy.jpg" alt="">
-                    </div>
-    
-                    <div class="item">
-                     <img class="box-filmes" src="imagens/filmes/Infinito.jpg" alt="">
-                    </div>
-    
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/JungleCruise.jpg" alt="">
-                    </div>
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/JusticaEmFamilia.jpg" alt="">
-                    </div>
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/OEsquadraoSuicida.jpg" alt="">
-                    </div>
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/OperaçãoNarco.jpg" alt="">
-                    </div>
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/PatrulhaCaninaOFilmer.jpg" alt="">
-                    </div>
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/SpaceJam.jpg" alt="">
-                    </div>
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/UnRescateDeHuevitos.jpg" alt="">
-                    </div>
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/filmes/ViuvaNegra.jpg" alt="">
-                    </div>
-                        <div class="item">
-                        <img class="box-filmes" src="imagens/series/whatif.jpg" alt="">
-                        </div>
-                   
-               </div>
+
+
+            <div class="item">
+
+                <img class="box-filmes" src="imagens/series/Loki.jpg" alt="">
+
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#" onclick="showModalLOKI()">Mais
+                        Informações </button>
+                </div>
             </div>
-        <!--END-CONTEUDO-LISTAS-CARROSEL-->
-    
+
+
+            <div class="item">
+                <img class="box-filmes" id="lucifer" src="imagens/series/GreysAnatomy.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+
+                <img class="box-filmes" src="imagens/series/Riverdale.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/Stargirl.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/TheFlash.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/TheIdealCity.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/TheGoodDDoctor.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/theWalkingDead.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/whatif.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-titulo-filme">
+        <h3 class="titulo-filme">FILMES</h3>
+    </div>
+    <!--LISTA-FILMES-->
+    <div class="carrosel-filmes">
+        <a name="filmesLink"></a>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/FreeGuy.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+
+            </div>
+
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/Infinito.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/JungleCruise.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/JusticaEmFamilia.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/OEsquadraoSuicida.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/OperaçãoNarco.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/PatrulhaCaninaOFilmer.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/SpaceJam.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/UnRescateDeHuevitos.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/filmes/ViuvaNegra.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="imagens/series/whatif.jpg" alt="">
+                <div class="container-botao">
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                        Trailler</button>
+
+                    <button class="option" a href="#"
+                        onclick="return abrirPopup('https://www.themoviedb.org/tv/63174-lucifer', 1200, 720)">Mais
+                        Informações </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--END-CONTEUDO-LISTAS-CARROSEL-->
+
+    <!-----------------------MODALS SERIES------------------------>
+
+    <div class="modal " id="modal">
+        <div class="modal-content">
+            <img src="imagens/series/Lucifer.jpg" alt="">
+            <h2>LUCIFER <br><br> Ano (2016) 16 Crime, Sci-Fi & Fantasy 45m <br><br>SINOPSE - Entediado com a vida
+                nas trevas, o diabo se muda para Los Angeles, abre um piano-bar e empresta sua sabedoria a uma
+                investigadora de assassinatos.</h2>
+            <span onclick="hideModal()">&times;</span>
+            <button class="modal-botao" a href="#"
+                onclick="return abrirPopup('https://www.youtube.com/watch?v=Nu5z3AT2jv8&t=20s', 400, 400)">Assistir
+                Trailler</button>
+        </div>
+
+    </div>
+
+
+    <div class="modalILHA " id="modalILHA">
+        <div class="modal-contentILHA">
+            <img src="imagens/series/ilharecord.jpg" alt="">
+            <h2>ILHA RECORD <br><br> Ano (2021) 16 Reality <br><br>SINOPSE -
+                Um grupo de celebridades parte para uma ilha paradisíaca e precisam de espírito de aventura e
+                determinação para superar os desafios e se provarem dignos do tesouro.</h2>
+            <span onclick="hideModalILHA()">&times;</span>
+            <button class="modal-botaoILHA" a href="#"
+                onclick="return abrirPopup('https://www.youtube.com/watch?v=M2j_GYR-HmY', 400, 400)">Assistir
+                Trailler</button>
+        </div>
+
+    </div>
+
+    <div class="modalLOKI " id="modalLOKI">
+        <div class="modal-contentLOKI">
+            <img src="imagens/series/Loki.jpg" alt="">
+            <h2>LOKI <br><br> Ano (2021) 14 Crime, Sci-Fi & Fantasy 52m <br><br>SINOPSE - Começando imediatamente depois
+                que Loki rouba o Tesseract (de novo), ele se encontra diante da Autoridade de Variação Temporal, uma
+                organização
+                burocrática que existe fora do tempo e espaço. Forçado a responder por seus crimes contra a linha do
+                tempo, ele recebe uma escolha: Ser deletado da realidade ou ajudar a capturar uma ameaça ainda maior.
+            </h2>
+            <span onclick="hideModalLOKI()">&times;</span>
+            <button class="modal-botao" a href="#"
+                onclick="return abrirPopup('https://www.youtube.com/watch?v=xdBWrkcmMwU', 400, 400)">Assistir
+                Trailler</button>
+        </div>
+
+    </div>
+
+
+
+
 
 
 
@@ -158,13 +428,14 @@
     <script SRC="js/Owl/owl.carousel.min.js"></script>
     <script SRC="js/Owl/main.js"></script>
 
-     <!--END-Scripts JavaScrript-jquery-fontawesome-->
+    <!--END-Scripts JavaScrript-jquery-fontawesome-->
 
-    </body>
-    
+</body>
+
 <footer class="footer">
     <div class="conteiner-footer">
-    <p>Todos os Direitos a Netflix - Todo Conteudo Retirado em TMDB.ORG</p>
-</div>
+        <p>Todos os Direitos a Netflix - Todo Conteudo Retirado em TMDB.ORG</p>
+    </div>
 </footer>
+
 </html>
