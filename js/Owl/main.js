@@ -55,7 +55,7 @@ function abrirPopup(url,w,h) {
         element.classList.remove("show-modal")
     }
 
-
+/*---------------------SCRIPT MODAL ILHA RECORD----------------------*/
      /*-----SCRIPT SHOW MODAL----*/ 
      function showModalILHA(){
         var element = document.getElementById("modalILHA");
@@ -68,8 +68,11 @@ function abrirPopup(url,w,h) {
         var element = document.getElementById("modalILHA");
         element.classList.remove("show-modalILHA")
     }
+/*-----------------END----SCRIPT MODAL ILHA RECORD----------------------*/
 
 
+
+/*---------------------SCRIPT MODAL LOKI----------------------*/
      /*-----SCRIPT SHOW MODAL----*/ 
      function showModalLOKI(){
         var element = document.getElementById("modalLOKI");
@@ -83,4 +86,60 @@ function abrirPopup(url,w,h) {
         element.classList.remove("show-modalLOKI")
     }
 
-    
+    /*------------------END---SCRIPT MODAL LOKI----------------------*/
+
+    /*-------------------SCRIPT MODAL GREYS ANATOMY----------------------*/
+    /*-----SCRIPT SHOW MODAL----*/ 
+    function showModalGREYS(){
+        var element = document.getElementById("modalGREYS");
+        element.classList.
+        add("show-modalGREYS");
+    }
+
+    /*SCRIPT HIDEEN MODAL*/ 
+    function hideModalGREYS(){
+        var element = document.getElementById("modalGREYS");
+        element.classList.remove("show-modalGREYS")
+    }
+    /*-----------------END---SCRIPT MODAL GREYS ANATOMY----------------------*/
+
+
+    /*---------------------SCRIPT MODAL RIVERDALE----------------------*/
+    function showModalRIVER(){
+        var element = document.getElementById("modalRIVER");
+        element.classList.
+        add("show-modalRIVER");
+    }
+
+    /*SCRIPT HIDEEN MODAL*/ 
+    function hideModalRIVER(){
+        var element = document.getElementById("modalRIVER");
+        element.classList.remove("show-modalRIVER")
+    }
+
+
+     /*---------------------SCRIPT MODAL STAR----------------------*/
+     function showModalSTAR(){
+        var element = document.getElementById("modalSTAR");
+        element.classList.
+        add("show-modalSTAR");
+    }
+
+    /*SCRIPT HIDEEN MODAL*/ 
+    function hideModalSTAR(){
+        var element = document.getElementById("modalSTAR");
+        element.classList.remove("show-modalSTAR")
+    }
+
+    /*---------------------SCRIPT MODAL FLASH----------------------*/
+    function showModalFLASH(){
+        var element = document.getElementById("modalFLASH");
+        element.classList.
+        add("show-modalFLASH");
+    }
+
+    /*SCRIPT HIDEEN MODAL*/ 
+    function hideModalFLASH(){
+        var element = document.getElementById("modalFLASH");
+        element.classList.remove("show-modalFLASH")
+    }

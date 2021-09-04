@@ -9,11 +9,140 @@
         margin-top: 10px;
     }
     .titulo-poster{
-        margin-top: 50px;
+        margin-top: 75px;
     }
     .poster-principal{
         background-position: center;
         background-size: cover;
         
     }
+    .modal-content{
+        height: 550px;
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        margin-right:15px;
+    }
+    .modal-content img{
+        height: 200px;
+        margin-top: 600px;
+
+    }
+    .modal-content h2{
+        font-size: 16px;
+        text-indent: 5px;
+        margin-top: 15px;
+    }
+    .modal-content span{
+        margin-right: 3px;
+        margin-top: -15px;
+        font-size: 30px;
+        color: red
+    }
+    .option{
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+
+
+
+
+/*RESPONSIVIDADE RIVER*/
+.modal-contentRIVER{
+    height: 550px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin-right:15px;
+}
+.modal-contentRIVER img{
+    height: 200px;
+    margin-top: 600px;
+
+}
+.modal-contentRIVER h2{
+    font-size: 16px;
+    text-indent: 5px;
+    margin-top: 15px;
+}
+.modal-contentRIVER span{
+    margin-right: 3px;
+    margin-top: -15px;
+    font-size: 30px;
+    color: red
+}
+
+/*---RESPONSIVIDADE ILHA RECORD*/
+.modal-contentILHA{
+    height: 550px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin-right:15px;
+}
+.modal-contentILHA img{
+    height: 200px;
+    margin-top: 600px;
+
+}
+.modal-contentILHA h2{
+    font-size: 16px;
+    text-indent: 5px;
+    margin-top: 15px;
+}
+.modal-contentILHA span{
+    margin-right: 3px;
+    margin-top: -15px;
+    font-size: 30px;
+    color: red
+}
+
+/*-----RESPONSIVIDADE LOKI---------*/
+.modal-contentLOKI{
+    height: 550px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin-right:15px;
+}
+.modal-contentLOKI img{
+    height: 200px;
+    margin-top: 600px;
+
+}
+.modal-contentLOKI h2{
+    font-size: 16px;
+    text-indent: 5px;
+    margin-top: 15px;
+}
+.modal-contentLOKI span{
+    margin-right: 3px;
+    margin-top: -15px;
+    font-size: 30px;
+    color: red
+}
+/*-----------RESPONSIVIDADE--RIVER-------*/
+.modal-contentSTAR{
+    height: 550px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin-right:15px;
+}
+.modal-contentSTAR img{
+    height: 200px;
+    margin-top: 600px;
+
+}
+.modal-contentSTAR h2{
+    font-size: 16px;
+    text-indent: 5px;
+    margin-top: 15px;
+}
+.modal-contentSTAR span{
+    margin-right: 3px;
+    margin-top: -15px;
+    font-size: 30px;
+    color: red
+}
 }

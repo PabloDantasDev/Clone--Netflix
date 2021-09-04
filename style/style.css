@@ -6,6 +6,7 @@
 :root{
    --vermelho:#E50914;
    --preta: #000000;
+  
 }
 
 /*RESETES PAGE*/
@@ -233,7 +234,7 @@ animation: zoom 4s ;
         margin-left: 2px;
         margin-top: 20px;
         height: 35px;
-        width: 95px;
+        width: 130px;
         display: inline-block;
         cursor: pointer;
     }
@@ -332,7 +333,7 @@ animation: zoom 4s ;
    
     }
     .modal-content img{
-        height: 450px;
+        height: 350px;
         width: 200px;
         
         
@@ -425,7 +426,7 @@ animation: zoom 4s ;
 
 }
 .modal-contentILHA img{
-    height: 450px;
+    height: 350px;
     width: 200px;
     
     
@@ -519,7 +520,7 @@ animation: zoom 4s ;
 
 }
 .modal-contentLOKI img{
-    height: 450px;
+    height: 350px;
     width: 200px;
     
     
@@ -529,4 +530,592 @@ animation: zoom 4s ;
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
+}
+
+/*---FINAL LOKI --------------------*/
+/*---------------------------MODAL FREYS ANATOMY-------------------------------*/
+
+.modalGREYS{
+        
+    position: fixed;
+    padding: 0;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: scale(1.1);
+    backdrop-filter: blur(1rem);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+   
+}
+.modal-contentGREYS{
+    background-color: rgba(20, 20, 20, 0.774);
+    padding: 16px 25px;
+    width: 650px;
+    height: 75%;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.modalGREYS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalGREYS h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+
+}
+.modal-botaoGREYS{
+   margin-top: 300px;
+   width: 120px;
+   background-color: rgb(153, 51, 51);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.modal-botaoGREYS:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.modal-contentGREYS span{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+ margin-bottom: 70%;
+ font-size: 24px;
+ cursor: pointer;
+ margin-right: -65px;
+
+
+}
+.modal-contentGREYS img{
+    height: 350px;
+    width: 200px;
+    
+    
+}
+
+.show-modalGREYS{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/*------------------------FLASH MODAL-------------------------------------*/
+.modalFLASH{
+        
+    position: fixed;
+    padding: 0;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: scale(1.1);
+    backdrop-filter: blur(1rem);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+   
+}
+.modal-contentFLASH{
+    background-color: rgba(20, 20, 20, 0.774);
+    padding: 16px 25px;
+    width: 650px;
+    height: 75%;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.modalFLASH{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalFLASH h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+
+}
+.modal-botaoFLASH{
+   margin-top: 300px;
+   width: 120px;
+   background-color: rgb(153, 51, 51);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.modal-botaoFLASH:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.modal-contentFLASH span{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+ margin-bottom: 70%;
+ font-size: 24px;
+ cursor: pointer;
+ margin-right: -65px;
+
+
+}
+.modal-contentFLASH img{
+    height: 350px;
+    width: 200px;
+    
+    
+}
+
+.show-modalFLASH{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+/*-------------------------------END FLASH MODAL--------------------------------*/
+
+/*---------------------------STAR GIRL----------------------------*/
+
+.modalSTAR{
+        
+    position: fixed;
+    padding: 0;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: scale(1.1);
+    backdrop-filter: blur(1rem);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+   
+}
+.modal-contentSTAR{
+    background-color: rgba(20, 20, 20, 0.774);
+    padding: 16px 25px;
+    width: 650px;
+    height: 75%;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.modalSTAR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalSTAR h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+
+}
+.modal-botaoSTAR{
+   margin-top: 300px;
+   width: 120px;
+   background-color: rgb(153, 51, 51);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.modal-botaoSTAR:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.modal-contentSTAR span{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+ margin-bottom: 70%;
+ font-size: 24px;
+ cursor: pointer;
+ margin-right: -65px;
+
+
+}
+.modal-contentSTAR img{
+    height: 350px;
+    width: 200px;
+    
+    
+}
+
+.show-modalSTAR{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+/*-------------------END STARGIRL-------------------------------*/
+/*---------------------------------RIVERDALE MODAL-----------------------*/
+
+.modalRIVER{
+        
+    position: fixed;
+    padding: 0;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: scale(1.1);
+    backdrop-filter: blur(1rem);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+   
+}
+.modal-contentRIVER{
+    background-color: rgba(20, 20, 20, 0.774);
+    padding: 16px 25px;
+    width: 650px;
+    height: 75%;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.modalRIVER{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalRIVER h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+
+}
+.modal-botaoRIVER{
+   margin-top: 300px;
+   width: 120px;
+   background-color: rgb(153, 51, 51);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.modal-botaoRIVER:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.modal-contentRIVER span{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+ margin-bottom: 70%;
+ font-size: 24px;
+ cursor: pointer;
+ margin-right: -65px;
+
+
+}
+.modal-contentRIVER img{
+    height: 350px;
+    width: 200px;
+    
+    
+}
+
+.show-modalRIVER{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+/*-----------------------------------END RIVERDALE MODAL--------------------------------------*/
+/*---------------------START MODAL STARGIRL----------------------*/
+
+.modalSTAR{
+        
+    position: fixed;
+    padding: 0;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: scale(1.1);
+    backdrop-filter: blur(1rem);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+   
+}
+.modal-contentSTAR{
+    background-color: rgba(20, 20, 20, 0.774);
+    padding: 16px 25px;
+    width: 650px;
+    height: 75%;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.modalSTAR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalSTAR h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+
+}
+.modal-botaoSTAR{
+   margin-top: 300px;
+   width: 120px;
+   background-color: rgb(153, 51, 51);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.modal-botaoSTAR:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.modal-contentSTAR span{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+ margin-bottom: 70%;
+ font-size: 24px;
+ cursor: pointer;
+ margin-right: -65px;
+
+
+}
+.modal-contentSTAR img{
+    height: 350px;
+    width: 200px;
+    
+    
+}
+
+.show-modalSTAR{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+
+/*-----------------------------------END MODAL STARGIRL--------------------------------------*/
+
+/*-----------------------------------START MODAL FLASH--------------------------------------*/
+
+
+.modalFLASH{
+        
+    position: fixed;
+    padding: 0;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: scale(1.1);
+    backdrop-filter: blur(1rem);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out , opacity 0.25s ease-in-out;
+   
+}
+.modal-contentFLASH{
+    background-color: rgba(20, 20, 20, 0.774);
+    padding: 16px 25px;
+    width: 650px;
+    height: 75%;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.modalFLASH{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalFLASH h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+
+}
+.modal-botaoFLASH{
+   margin-top: 300px;
+   width: 120px;
+   background-color: rgb(153, 51, 51);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.modal-botaoFLASH:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.modal-contentFLASH span{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 9999;
+ margin-bottom: 70%;
+ font-size: 24px;
+ cursor: pointer;
+ margin-right: -65px;
+
+
+}
+.modal-contentFLASH img{
+    height: 350px;
+    width: 200px;
+    
+    
+}
+
+.show-modalFLASH{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+.infor a{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.infor a:hover{
+    color: rgb(255, 254, 254);
+    
+
 }
